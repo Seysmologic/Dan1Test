@@ -109,3 +109,27 @@ print(person1.gender,person1[2])
 
 for person in [person1, person2]:
     print(f"Name: {person.name}, Age: {person.age}, Gender: {person.gender}")
+
+
+
+
+from collections import defaultdict # import бібліотеки для колекцій
+
+my_dict = defaultdict(int) # створення dictionary, with default value
+
+my_dict['one'] = 1
+my_dict['three'] = 3
+print(my_dict, my_dict['two'] ) # create key-value if not exists
+
+
+from collections import OrderedDict
+
+ord_dict = OrderedDict([('Person3', 3), ('Person2', 2), ('Person1', 1)])
+
+print(ord_dict, type(ord_dict), ord_dict.__sizeof__())
+
+for i in ord_dict:
+    print(i)
+
+
+
