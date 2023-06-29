@@ -95,3 +95,17 @@ def turn_to_set(entry_list):
 print(turn_to_set([1, 2, 3, 4, 5, 6, 5, 6, 7]))
 
 
+from collections import namedtuple # імпорт функціоналу із бібліотеки
+
+Person = namedtuple('Person', ['name', 'age', 'gender']) # фактичне створення структури
+
+person1 = Person(name='Alice', age=25, gender='Female') # init
+person2 = Person(name='Bob', age=30, gender='Male')
+
+
+print(person1.name, person1[0])
+print(person2.age, person2[1])
+print(person1.gender,person1[2])
+
+for person in [person1, person2]:
+    print(f"Name: {person.name}, Age: {person.age}, Gender: {person.gender}")
